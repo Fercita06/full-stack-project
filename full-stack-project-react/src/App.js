@@ -4,7 +4,7 @@ import Home from "./components/Home/Home";
 import Form from './components/Form/Form';
 import Location from './components/Location/Location';
 import LocationList from './components/LocationList/LocationList';
-import {BrowserRouter as Router, Routes, Route} from "react-Router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 
 function App() {
@@ -12,7 +12,9 @@ function App() {
     <div className='app'>
       <Nav />
       <Routes>
-        <Route Path="/" element
+        <Route path="/" element={<Home/>} />
+        <Route path="location" element={<location/>} />
+        <Route path="LocationList" element={<LocationList/>} />
       </Routes>
 
     </div>

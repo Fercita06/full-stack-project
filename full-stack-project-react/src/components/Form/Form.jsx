@@ -6,7 +6,7 @@ const Form = ({toggleAddBox}) => {
     const [project, setProject] = useState({
         name: "",
         place: "",
-        nacionality: "",
+        nationality: "",
         notes: "",
     })
 
@@ -28,13 +28,8 @@ const Form = ({toggleAddBox}) => {
       
   return (
     <div className="log-form">
-      <div className='log-form__content'>
-        <img src={whiteCross} alt="Close Add Project" className='log-form__cross' onClick={toggleAddBox}/>
-      <h2>Add your favourite place</h2> 
-      <form onSubmit={handleSubmit}>
-       
-      </form>
-      </div>
+    
+     
     </div>
   )
 }

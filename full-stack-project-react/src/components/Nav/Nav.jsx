@@ -8,11 +8,11 @@ const Nav = () => {
         Home
       </Link>
 
-      <Link className="nav-menu__item" to="/places to visit">
+      <Link className="nav-menu__item" to="/location">
         Places to visit
       </Link>
 
-      <Link className="nav-menu__item" to="/add your place">
+      <Link className="nav-menu__item" to="/locationList">
         Add your place
       </Link>
     </div>
