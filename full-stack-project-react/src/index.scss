@@ -1,0 +1,28 @@
+/*abstracts*/
+@use './scss/abstracts/variables';
+/*base*/
+@use './scss/base/resets';
+@use './scss/base/base';
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.primary-button{
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 9px;
+  color:white;
+  background-color: #2563eb;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -2,34 +2,75 @@ import React, { useState } from 'react'
 import "./Form.scss"
 
 
-const Form = ({toggleAddBox}) => {
-    const [project, setProject] = useState({
-        name: "",
-        place: "",
-        nationality: "",
-        notes: "",
+const Form = ({changeShowModal}) => {
+
+    const _baseURL = 'https://62dd123057ac3c3f3c6392c1.mockapi.io';
+
+    const [ showError, setShowError ] = useState(false);
+    const [data, setData] = useState({
+        Place_name: "",
+        Location: "",
+        Country: "",
+        Highlights: "",
     })
 
-  //   const handleSubmit = (e) => {
-  //       e.preventDefault()
-  //       fetch('https://google.com', {
-  //           method: 'POST',
-  //           headers: {
-  //               'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify(id)
-  //   })
-  //   .then((response) => response.json())
-  //   .then((json => console.log(json)))
-  //   .catch(err => console.log(err))
-  //   e.target.reset();
-  // }
+    const handleSubmit = async (e) => {
+       try {
+        e.preventDefault()
+        console.log(e)
+        //validar
+        const data = {
+          Place_name: e.target[0].value,
+          Location: e.target[1].value,
+          Country: e.target[2].value,
+          Highlights: e.target[3].value
+        }
+        console.table(data);
+        await fetch(`${_baseURL}/Argentinian_places`,{
+          method: 'POST',
+          body: JSON.stringify(data), 
+          headers:{
+            'Content-Type': 'application/json'
+          }
+        });
+
+        e.target[0].value="";
+        e.target[1].value="";
+        e.target[2].value="";
+        e.target[3].value="";
+       } catch (error) {
+        console.error(error);
+       }
+        //Para ver si se subio, probar en navegador https://62dbeb594438813a260d5087.mockapi.io/api/v1/places
+    }
             
       
   return (
-    <div className="log-form">
-    
-     
+    <div className="form-container">
+      <h2 className="form-container__title">Add your favourite place</h2> 
+      {showError && <p>Invalid fields</p>}
+      <form onSubmit={handleSubmit}>
+        <div className='form-group'>
+          <label htmlFor="">Place</label>
+          <input type="text"/>
+        </div>
+        <div className='form-group'>
+          <label htmlFor="">Location</label>
+          <input type="text"/>
+        </div>
+        <div className='form-group'>
+          <label htmlFor="">Country</label>
+          <input type="text"/>
+        </div>
+        <div className='form-group'>
+          <label htmlFor="">Highlights</label>
+          <input type="text"/>
+        </div>
+        
+        <button className="primary-button">Submit</button>
+       
+      </form>
+
     </div>
   )
 }
