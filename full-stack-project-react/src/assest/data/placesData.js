@@ -1,81 +1,100 @@
 const placesData = [
-  {
-    id: "1",
-    title: "El Calafate ",
-    image: "",
-    location: "Patagonia, Santa Cruz Province",
-    activities: "Glaciar Perito Moreno , El Chalten",
-    "Best time to go": "November to March",
-  },
-
-  {
-    id: "2",
-    title: "Cataratas del Iguazu",
-    image: "",
-    location: "Misiones Province",
-    activities:
-      "visit the Waterfalls in the Argentinian and Brazilian side, Wanda Mines and San Ignacio Ruines",
-    "Best time to go": "March to June ",
-  },
-
-  {
-    id: "3",
-    title: "Buenos Aires",
-    image: "",
-    location: "Buenos Aires, capital",
-    activities:
-      "Visit: La Boca, San Telmo, Puerto Madero, Tigre, Buenos Aires has a great night life",
-    "Best time to go": "March to November",
-  },
-
-  {
-    id: "4",
-    title: "Mendoza",
-    image: "",
-    location: "Mendoza Capital",
-    activities:
-      "Wine tasting, tour to the Aconcagua, rafting in San Rafael, Las Leñas",
-    "Best time to go": "October to April",
-  },
-
-  {
-    id: "5",
-    title: "Cordoba",
-    image: "",
-    location: "Cordoba province",
-    activities:
-      "Visit La Cumbrecita, Altas Cumbres, Mina Clavero, General Belgrano",
-    "Best time to go": "March to November",
-  },
-
-  {
-    id: "6",
-    title: "7 Lakes",
-    image: "",
-    location: "northern Patagonia",
-    activities:
-      "visit Bariloche, San Martin de los Andes, Langostura, Junin de los Andes,Villa Traful",
-    "Best time to go": "September to March",
-  },
-
-  {
-    id: "7",
-    title: "Norte Argentino",
-    image: "",
-    location: "Jujuy and Salta provinces",
-    activities:
-      "Visit: Purmamarca, Tilcara, Salinas Grandes, Humahuaca, vineyard in Cafayate ",
-    "Best time to go": "March to December",
-  },
-  {
-    id: "8",
-    title: "Ushuaia",
-    image: "",
-    location: "Tierra del Fuego",
-    activities:
-      "visit:Cerro Castor, Laguna Esmeralda, Glaciar Vinciguerra, Lago Escondido",
-    "Best time to go": "",
-  },
-];
-
+  
+    {
+     "Place_name": "El Calafate",
+     "Location": "Santa Cruz, province",
+     "Country": "Argentina",
+     "Highlights": [
+      "Glaciar Perito Moreno",
+      "El Chalten"
+     ],
+     "id": "1"
+    },
+    {
+     "Place_name": "Cataratas del Iguazu",
+     "Location": "Misiones Province",
+     "Country": "Argentina",
+     "Highlights": [
+      "Parque Nacional Iguazu",
+      "Wanda Mines",
+      "San Ignacion ruins"
+     ],
+     "id": "2"
+    },
+    {
+     "Place_name": "Buenos Aires",
+     "Location": "Buenos Aires, capital",
+     "Country": "Argentina",
+     "Highlights": [
+      "Caminito",
+      "Recoleta",
+      "Puerto Madero",
+      "San Telmo",
+      "Tigre"
+     ],
+     "id": "3"
+    },
+    {
+     "Place_name": "Mendoza",
+     "Location": "Mendoza, Province",
+     "Country": "Argentina",
+     "Highlights": [
+      "Wine tasting",
+      "Aconcagua",
+      "Las Leñas",
+      "San Rafael"
+     ],
+     "id": "4"
+    },
+    {
+     "Place_name": "Cordoba",
+     "Location": "Cordoba, province",
+     "Country": "Argentina",
+     "Highlights": [
+      "Cordoba capital",
+      "La cumbrecita",
+      "Altas cumbres",
+      "Mina Clavero",
+      "Villa General Belgrano"
+     ],
+     "id": "5"
+    },
+    {
+     "Place_name": "7 Lagos",
+     "Location": "Patagonia",
+     "Country": "Argentina",
+     "Highlights": [
+      "Bariloche",
+      "San Martin de los Andes",
+      "Villa Langostura",
+      "Junin de los Andes"
+     ],
+     "id": "6"
+    },
+    {
+     "Place_name": "Norte Argentino",
+     "Location": "Jujuy and Salta",
+     "Country": "Argentina",
+     "Highlights": [
+      "Salta capital",
+      "Cachi",
+      "Cafayate",
+      "Humahuaca",
+      "Purmamarca",
+      "Salinas grandes"
+     ],
+     "id": "7"
+    },
+    {
+     "Place_name": "Usuahia",
+     "Location": "Tierra del fuego",
+     "Country": "Argentina",
+     "Highlights": [
+      "Cerro Castor",
+      "Canal De Beagle",
+      "Antartica"
+     ],
+     "id": "8"
+    }
+   ]
 export default placesData;
