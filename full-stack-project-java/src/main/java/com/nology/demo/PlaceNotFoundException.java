@@ -3,8 +3,8 @@ package com.nology.demo;
 
 import javax.persistence.EntityNotFoundException;
 
-public class PlacesNotFoundException extends EntityNotFoundException {
-    public PlacesNotFoundException() {
+public class PlaceNotFoundException extends EntityNotFoundException {
+    public PlaceNotFoundException() {
         super("FullStackProject has not been found");
     }
 }

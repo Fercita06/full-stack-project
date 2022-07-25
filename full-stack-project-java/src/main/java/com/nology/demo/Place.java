@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Places {
+public class Place {
 
     @Id
     @GeneratedValue(generator = "system-uuid")
@@ -20,7 +20,7 @@ public class Places {
     private String highlights;
 
 
-    public Places(String id, String place_name, String location, String country, String highlights) {
+    public Place(String id, String place_name, String location, String country, String highlights) {
         this.id = id;
         this.place_name = place_name;
         this.location = location;
