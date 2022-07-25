@@ -10,10 +10,10 @@ const Location = (props) => {
 
   return (
     <div className="location">
-      <h3>{Place_name}</h3>
-      <p>{Location}</p>
-      <p>{Country}</p>
-      <p>{Highlights}</p>
+      <h3 className="location_place">{Place_name}</h3>
+      <p className="location_location">{Location}</p>
+      <p className="location_country">{Country}</p>
+      <p className="location_highlights">{Highlights}</p>
     </div>
   )
 }

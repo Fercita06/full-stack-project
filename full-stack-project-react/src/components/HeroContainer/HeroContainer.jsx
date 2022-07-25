@@ -13,14 +13,14 @@ const HeroContainer = () => {
     {
       title: "Explore the activities that Argentina has in store for you",
       subtitle:
-        "Conoce toda la variedad de productos que tenemos para ofrecerte.",
+        "Visitors can enjoy the awe-inspiring views of the falls along with tours, treks, and water sports at the falls' base..",
       img:"https://images.pexels.com/photos/4916562/pexels-photo-4916562.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       id:2  
     },
     {
-      title: "",
+      title: "Main attractions include spectacular glaciers.",
       subtitle:
-        "Estamos en el corazón de la ciudad, pero también contamos con muchas sucursales.",
+        "Argentina has distinct and beautiful geography, interesting history and culture, thriving nightlife, and unique local cuisine.",
       img:"https://images.pexels.com/photos/776938/pexels-photo-776938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       id:3
     },

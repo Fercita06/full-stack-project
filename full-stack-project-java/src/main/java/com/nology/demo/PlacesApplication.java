@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FullStackProjectApplication {
+public class PlacesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FullStackProjectApplication.class, args);
+		SpringApplication.run(PlacesApplication.class, args);
 	}
 
 }
