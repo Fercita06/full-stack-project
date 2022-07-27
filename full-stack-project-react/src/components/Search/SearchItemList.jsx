@@ -11,9 +11,11 @@ const SearchItemList = ({ query }) => {
         fetch("http://localhost:8080/places")
             .then( resp => resp.json())
             .then( data => {
-                console.log(data);
-                const results = data.filter( loc => loc.Place_name.toLowerCase().includes(query.toLowerCase()));
+               
+                const results = data.filter( loc => loc.location.toLowerCase().includes(query.toLowerCase()));
                 setLocations(results);
+                
+                console.log(results);
             })
             .catch( error => console.error(error) );
 
@@ -39,8 +41,6 @@ const SearchItemList = ({ query }) => {
             :<p> Loading places... </p>
 
         }
-
-
     </div>
   )
 }
