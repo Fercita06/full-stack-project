@@ -8,10 +8,10 @@ const Form = ({changeShowModal}) => {
 
     const [ showError, setShowError ] = useState(false);
     const [data, setData] = useState({
-        Place_name: "",
-        Location: "",
-        Country: "",
-        Highlights: "",
+        place_name: "",
+        location: "",
+        country: "",
+        highlights: "",
     })
 
     const handleSubmit = async (e) => {
@@ -20,10 +20,10 @@ const Form = ({changeShowModal}) => {
         console.log(e)
         //validate the data
         const data = {
-          Place_name: e.target[0].value,
-          Location: e.target[1].value,
-          Country: e.target[2].value,
-          Highlights: e.target[3].value
+          place_name: e.target[0].value,
+          location: e.target[1].value,
+          country: e.target[2].value,
+          highlights: e.target[3].value
         }
         console.table(data);
         await fetch("http://localhost:8080/place",{
