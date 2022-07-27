@@ -1,7 +1,7 @@
 
 
 .nav{
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,5 +11,9 @@
     max-width: 1200px;
     font-size: 20px;
     margin-bottom: 30 0 30;
-    background-color: white;
+ 
+
+    &__menu-item{
+        color:red;
+    }
 }

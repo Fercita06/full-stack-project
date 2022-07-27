@@ -27,10 +27,17 @@
     }
 
     .primary-button {
-        width: auto;
-        border-radius: 10px;
-        text-align: center;
-        margin-left: 30%;
+      width: auto;
+      text-align: center;
+      padding: 12px 9px;
+      color:white;
+      background-color: #2563eb;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: 30%;
+      border-radius: 15px;
+       
         
         &:hover {
             background:darkblue;
