@@ -52,19 +52,19 @@ const Form = ({changeShowModal}) => {
       <form onSubmit={handleSubmit}>
         <div className='form-group'>
           <label htmlFor="">Place</label>
-          <input type="text"/>
+          <input className='input' type="text"/>
         </div>
         <div className='form-group'>
           <label htmlFor="">Location</label>
-          <input type="text"/>
+          <input className='input' type="text"/>
         </div>
         <div className='form-group'>
           <label htmlFor="">Country</label>
-          <input type="text"/>
+          <input className='input' type="text"/>
         </div>
         <div className='form-group'>
           <label htmlFor="">Highlights</label>
-          <input type="text"/>
+          <input className='input' type="text"/>
         </div>
         
         <button className="primary-button">Submit</button>
