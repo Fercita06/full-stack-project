@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import Location from "../Location/Location";
 import "./LocationList.scss";
 
-const LocationList = (props) => {
-  const _baseURL = 'https://62dd123057ac3c3f3c6392c1.mockapi.io';
+const LocationList = () => {
+  //const _baseURL = 'https://62dd123057ac3c3f3c6392c1.mockapi.io';
   const [locations, setLocations] = useState([]);
 
   const getLocations = async() => {
     try {
-      const response = await fetch(`${_baseURL}/Argentinian_places`);
+      const response = await fetch('http://localhost:8080/places');
       const data = await response.json();
       setLocations(data)
     } catch (error) {
@@ -30,7 +30,7 @@ const LocationList = (props) => {
             (locations.map( loc => {
               return( <Location key={loc.id} location={loc} />)
             })) :
-            <p>Loading locations...</p>
+            <p className="container__paragraph">Loading locations...</p>
         }
 
       </div>

@@ -1,11 +1,12 @@
 .location{
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   border: 1px solid black;
   border-radius: 5px;
   background-color:rgb(228, 222, 222);
-  height: 200px;
-  width: 500px;
+  flex:1 0 21%;
+
+
 
   &__place{
      font-size: 20px;

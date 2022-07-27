@@ -1,4 +1,5 @@
-.container{
+
+.container {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -6,13 +7,24 @@
   background-color:white;
   align-items: center;
   margin: 40px auto; 
+
+  &__paragraph{
+    background-color: white;
+  }
 }
 
 .heading{
   font-size: 30px;
   text-align: center;
   padding-top: 40px;
-  background-color: lightgoldenrodyellow;
+  background-color:white;
   padding-bottom: 25px;
 
+}
+
+.nav{
+  background-color: white;
+}
+.p{
+  background-color: white;
 }

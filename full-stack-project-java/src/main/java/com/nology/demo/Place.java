@@ -28,6 +28,9 @@ public class Place {
         this.highlights = highlights;
     }
 
+    public Place() {
+    }
+
     public String getId() {
         return id;
     }

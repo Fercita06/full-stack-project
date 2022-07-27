@@ -12,15 +12,15 @@ const SearchModal = ({setShowModal}) => {
     }
 
   return (
-    <section className="search-modal">
+    <section className="container search-modal">
         <MdClose onClick={()=>{setShowModal(false)}} className='search-modal__icon--close' />
         <input 
             value={query}
             onChange={(e)=>{ handleSearch(e) }}
         />
-
+        <div className='container'>
         { query.length > 0 && <SearchItemList query={query}/> }
-
+        </div>
 
     </section>
   )

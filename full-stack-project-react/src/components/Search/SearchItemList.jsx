@@ -4,11 +4,11 @@ import Location from '../Location/Location';
 const SearchItemList = ({ query }) => {
 
     const [locations, setLocations] = useState([]);
-    const url = "https://62dd123057ac3c3f3c6392c1.mockapi.io/Argentinian_places"
+    //const url = "https://62dd123057ac3c3f3c6392c1.mockapi.io/Argentinian_places"
 
     useEffect(()=>{
 
-        fetch(url)
+        fetch("http://localhost:8080/places")
             .then( resp => resp.json())
             .then( data => {
                 console.log(data);

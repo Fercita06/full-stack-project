@@ -4,7 +4,7 @@ import "./Form.scss"
 
 const Form = ({changeShowModal}) => {
 
-    const _baseURL = 'https://62dd123057ac3c3f3c6392c1.mockapi.io';
+    //const _baseURL = 'https://62dd123057ac3c3f3c6392c1.mockapi.io';
 
     const [ showError, setShowError ] = useState(false);
     const [data, setData] = useState({
@@ -18,7 +18,7 @@ const Form = ({changeShowModal}) => {
        try {
         e.preventDefault()
         console.log(e)
-        //validar
+        //validate the data
         const data = {
           Place_name: e.target[0].value,
           Location: e.target[1].value,
@@ -26,7 +26,7 @@ const Form = ({changeShowModal}) => {
           Highlights: e.target[3].value
         }
         console.table(data);
-        await fetch(`${_baseURL}/Argentinian_places`,{
+        await fetch("http://localhost:8080/place",{
           method: 'POST',
           body: JSON.stringify(data), 
           headers:{
@@ -41,7 +41,7 @@ const Form = ({changeShowModal}) => {
        } catch (error) {
         console.error(error);
        }
-        //Para ver si se subio, probar en navegador https://62dbeb594438813a260d5087.mockapi.io/api/v1/places
+       
     }
             
       

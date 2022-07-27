@@ -27,10 +27,10 @@ public class PlacesController {
         return ResponseEntity.status(HttpStatus.CREATED).body("Created Greeting with ID : " + place.getId());
     }
 
-    @GetMapping("/place")
-    public String getCustomPlace(@RequestParam String name) {
-        return "Hello " + name;
-    }
+//    @GetMapping("/place")
+//    public String getCustomPlace(@RequestParam String name) {
+//        return "Hello " + name;
+//    }
 
     @GetMapping("/place/{id}")
     public ResponseEntity<Place> getPlaceById(@PathVariable String id) {
@@ -38,7 +38,7 @@ public class PlacesController {
         return ResponseEntity.status(HttpStatus.FOUND).body(place);
     }
 
-    @GetMapping("/place")
+    @GetMapping("/places")
     public ResponseEntity<List<Place>> getPlaces() {
         List<Place> places = placesService.findAllPlaces();
         return ResponseEntity.status(HttpStatus.FOUND).body(places);
