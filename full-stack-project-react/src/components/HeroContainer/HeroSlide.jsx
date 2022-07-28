@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './styles/HeroSlide.scss'
 
 const HeroSlide = ({ slide, changeSlide, arrayIndex }) => {
@@ -9,7 +8,7 @@ const HeroSlide = ({ slide, changeSlide, arrayIndex }) => {
         <div className="hero-slide__bg">
             <img 
                 src={slide.img} 
-                alt="Imagen de fondo del hero"/>
+                alt="background image of hero"/>
         </div>
         <div className="hero-slide__caption">
             <h2>{ slide.title }</h2>

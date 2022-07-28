@@ -1,18 +1,20 @@
 .container{
-  // display: flex;
-  // flex-direction: column;
-  
-  //flex:1 0 21%;
   height: 100px;
   min-width: 30%;
  
-  &__location{
-    background-color: lightgrey;
+  &__card{
+    background-color: #a1b2cd;
     min-width: 330px;
-    min-height: 100px;
+    min-height: 150px;
     border-radius: 10px;
     text-align: center;
     padding-top: 20px;
   }
 
+  &__place{
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
 }
+
+
